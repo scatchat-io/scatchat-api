@@ -1,5 +1,7 @@
 # ScatChat API
 
+[![Build Status](https://travis-ci.com/scat-chat/scat-chat-api.svg?branch=master)](https://travis-ci.com/scat-chat/scat-chat-api)
+
 ## Getting Started
 
 To start your Phoenix server:
