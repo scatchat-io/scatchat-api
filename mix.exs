@@ -35,7 +35,7 @@ defmodule ScatChat.MixProject do
     [
       {:phoenix, "~> 1.4.0-rc"},
       {:phoenix_pubsub, "~> 1.1"},
-      {:phoenix_ecto, "~> 3.5"},
+      {:phoenix_ecto, "~> 4.0"},
       {:ecto, "~> 3.0-rc", override: true},
       {:ecto_sql, "~> 3.0-rc", override: true},
       {:postgrex, ">= 0.0.0-rc"},
