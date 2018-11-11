@@ -7,5 +7,7 @@ defmodule ScatChatWeb.Router do
 
   scope "/api", ScatChatWeb do
     pipe_through :api
+
+    get "/hello", HelloController, :index
   end
 end
