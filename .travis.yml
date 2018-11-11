@@ -14,3 +14,11 @@ branches:
 before_script:
   - cp config/travis.exs config/test.exs
   - mix do ecto.create, ecto.migrate
+
+script:
+  # Add Gigalixir remote for deployment
+  - git remote add gigalixir https://$GIGALIXIR_EMAIL:$GIGALIXIR_API_KEY@git.gigalixir.com/$GIGALIXIR_APP_NAME.git
+  # Retrieve accurate name of current branch
+  - export BRANCH=${TRAVIS_PULL_REQUEST_BRANCH:-$TRAVIS_BRANCH}
+  # Test in all cases and deploy if on master
+  - mix test && [ $BRANCH = master ] && git push -f gigalixir HEAD:refs/heads/master
