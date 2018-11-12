@@ -4,8 +4,14 @@ elixir: 1.7.4
 
 otp_release: 21.0.9
 
+# Required for Postgresql 10
+dist: xenial
+
 services:
   - postgresql
+
+addons:
+  postgresql: 10
 
 branches:
   only:
