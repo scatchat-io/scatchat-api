@@ -21,6 +21,11 @@ before_script:
   - cp config/travis.exs config/test.exs
   - mix do ecto.create, ecto.migrate
 
+# Upload coverage to codecov.io
+after_success:
+  - mix coveralls.json
+  - bash <(curl -s https://codecov.io/bash)
+
 before_deploy:
   - git remote add gigalixir https://$GIGALIXIR_EMAIL:$GIGALIXIR_API_KEY@git.gigalixir.com/$GIGALIXIR_APP_NAME.git
 
