@@ -1,6 +1,7 @@
 # ScatChat API
 
 [![Build Status](https://travis-ci.com/scat-chat/scat-chat-api.svg?branch=master)](https://travis-ci.com/scat-chat/scat-chat-api)
+[![codecov](https://codecov.io/gh/scat-chat/scat-chat-api/branch/master/graph/badge.svg)](https://codecov.io/gh/scat-chat/scat-chat-api)
 
 ## Getting Started
 
