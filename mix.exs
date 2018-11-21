@@ -51,7 +51,7 @@ defmodule ScatChat.MixProject do
       {:plug_cowboy, "~> 2.0"},
       {:distillery, "~> 2.0"},
       {:excoveralls, "~> 0.10", only: :test},
-      {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false}
     ]
   end
 
