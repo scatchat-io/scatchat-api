@@ -1,5 +1,6 @@
 # ScatChat API
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0695b8cbced74a0d8e5c36ba637b4863)](https://www.codacy.com/app/scat-chat/scat-chat-api)
 [![Build Status](https://travis-ci.com/scat-chat/scat-chat-api.svg?branch=master)](https://travis-ci.com/scat-chat/scat-chat-api)
 [![codecov](https://codecov.io/gh/scat-chat/scat-chat-api/branch/master/graph/badge.svg)](https://codecov.io/gh/scat-chat/scat-chat-api)
 
