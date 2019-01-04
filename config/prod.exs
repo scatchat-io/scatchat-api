@@ -16,10 +16,17 @@ config :scat_chat, ScatChatWeb.Endpoint,
   secret_key_base: "${SECRET_KEY_BASE}",
   server: true
 
-# Do not print debug messages in production
-config :logger, level: :info
+# Logger configuration
+config :logger,
+  level: :info,
+  backends: [Timber.LoggerBackends.HTTP],
+  utc_log: true
 
-# ## SSL Support
+# Timber configuration
+config :timber,
+  api_key: "${TIMBER_API_KEY}"
+
+  # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
 # to the previous section and set your `:url` port to 443:
