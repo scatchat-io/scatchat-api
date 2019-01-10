@@ -19,8 +19,14 @@ defmodule ScatChatWeb.Endpoint do
     pass: ["*/*"],
     json_decoder: Phoenix.json_library()
 
+  # TODO: The following two plugs are probably unecessary,
+  # we should remove them once we've finalized our plug
+  # pipeline.
   plug Plug.MethodOverride
   plug Plug.Head
+
+  plug Timber.Plug.Event
+  plug Timber.Plug.HTTPContext
 
   plug ScatChatWeb.Router
 end
