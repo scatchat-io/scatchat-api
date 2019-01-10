@@ -16,6 +16,9 @@ defmodule ScatChat.Application do
       # {ScatChat.Worker, arg},
     ]
 
+    # Add timber exception translator
+    :ok = Logger.add_translator({Timber.Exceptions.Translator, :translate})
+
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: ScatChat.Supervisor]
