@@ -11,9 +11,9 @@ use Mix.Config
 # before starting your production server.
 config :scat_chat, ScatChatWeb.Endpoint,
   load_from_system_env: true,
-  http: [:inet6, port: {:system, "PORT"} || 4000],
+  http: [:inet6, port: System.get_env("PORT") || 4000],
   url: [host: "example.com", port: 80],
-  secret_key_base: "${SECRET_KEY_BASE}",
+  secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
   server: true
 
 # Logger configuration
@@ -24,7 +24,7 @@ config :logger,
 
 # Timber configuration
 config :timber,
-  api_key: "${TIMBER_API_KEY}"
+  api_key: Map.fetch!(System.get_env(), "TIMBER_API_KEY")
 
   # ## SSL Support
 #
@@ -77,6 +77,6 @@ config :timber,
 
 # Configure your database
 config :scat_chat, ScatChat.Repo,
-  url: "${DATABASE_URL}",
+  url: Map.fetch!(System.get_env(), "DATABASE_URL"),
   ssl: true,
   pool_size: 1
