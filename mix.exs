@@ -42,6 +42,8 @@ defmodule ScatChat.MixProject do
   defp deps do
     [
       # Application
+      {:absinthe, "~> 1.4.13"},
+      {:absinthe_plug, "~> 1.4.6"},
       {:ecto_sql, "~> 3.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
