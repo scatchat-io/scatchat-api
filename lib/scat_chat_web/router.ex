@@ -5,7 +5,11 @@ defmodule ScatChatWeb.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/api", ScatChatWeb do
+  scope "/graphql" do
     pipe_through :api
+
+    forward "/", Absinthe.Plug,
+      schema: ScatChatWeb.Schema,
+      json_codec: Jason
   end
 end
