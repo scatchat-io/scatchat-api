@@ -42,6 +42,8 @@ defmodule ScatChat.MixProject do
   defp deps do
     [
       # Application
+      {:absinthe, "~> 1.4.13"},
+      {:absinthe_plug, "~> 1.4.6"},
       {:ecto_sql, "~> 3.0"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
@@ -55,6 +57,7 @@ defmodule ScatChat.MixProject do
       # Tooling
       {:credo, "~> 1.1.0", only: [:dev, :test], runtime: false},
       {:distillery, "~> 2.0"},
+      {:ex_machina, "~> 2.3.0", only: :test},
       {:excoveralls, "~> 0.10", only: :test},
       {:timber, "~> 3.0"},
       {:timber_exceptions, "~> 2.0"},
