@@ -8,9 +8,11 @@ defmodule ScatChatWeb.ErrorHelpersTest do
   end
 
   test "translate error with count" do
-    assert translate_error({
+    error = {
       "test message with count",
       %{count: 5, random: 'stuff'}
-    }) == "test message with count"
+    }
+
+    assert translate_error(error) == "test message with count"
   end
 end

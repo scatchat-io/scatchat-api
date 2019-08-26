@@ -26,7 +26,7 @@ config :logger,
 config :timber,
   api_key: Map.fetch!(System.get_env(), "TIMBER_API_KEY")
 
-  # ## SSL Support
+# ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
 # to the previous section and set your `:url` port to 443:

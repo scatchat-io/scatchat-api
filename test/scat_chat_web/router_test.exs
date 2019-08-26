@@ -19,13 +19,14 @@ defmodule ScatChatWeb.RouterTest do
           email
         }
       }
-      """
+    """
 
-      res = context.conn
-        |> post("/graphql", %{ "query" => "query users #{query}" })
+    res =
+      context.conn
+      |> post("/graphql", %{"query" => "query users #{query}"})
 
-      [user_json] = json_response(res, 200)["data"]["users"]
+    [user_json] = json_response(res, 200)["data"]["users"]
 
-      assert user_json["id"] == to_string(user.id)
+    assert user_json["id"] == to_string(user.id)
   end
 end
