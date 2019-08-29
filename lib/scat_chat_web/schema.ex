@@ -1,4 +1,8 @@
 defmodule ScatChatWeb.Schema do
+  @moduledoc """
+  This contains the graphql schema used by Absinthe.
+  """
+
   use Absinthe.Schema
   import_types(ScatChatWeb.Schema.AccountsTypes)
 
