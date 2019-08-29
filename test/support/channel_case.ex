@@ -15,6 +15,8 @@ defmodule ScatChatWeb.ChannelCase do
 
   use ExUnit.CaseTemplate
 
+  alias Ecto.Adapters.SQL
+
   using do
     quote do
       # Import conveniences for testing with channels
@@ -26,10 +28,10 @@ defmodule ScatChatWeb.ChannelCase do
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(ScatChat.Repo)
+    :ok = SQL.Sandbox.checkout(ScatChat.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(ScatChat.Repo, {:shared, self()})
+      SQL.Sandbox.mode(ScatChat.Repo, {:shared, self()})
     end
 
     :ok
