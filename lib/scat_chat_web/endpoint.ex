@@ -27,8 +27,5 @@ defmodule ScatChatWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
 
-  plug Timber.Plug.Event
-  plug Timber.Plug.HTTPContext
-
   plug ScatChatWeb.Router
 end

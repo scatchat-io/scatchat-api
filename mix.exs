@@ -58,10 +58,7 @@ defmodule ScatChat.MixProject do
       {:credo, "~> 1.3.0", only: [:dev, :test], runtime: false},
       {:distillery, "~> 2.0"},
       {:ex_machina, "~> 2.4.0", only: :test},
-      {:excoveralls, "~> 0.10", only: :test},
-      {:timber, "~> 3.0"},
-      {:timber_exceptions, "~> 2.0"},
-      {:timber_plug, "~> 1.0"}
+      {:excoveralls, "~> 0.10", only: :test}
     ]
   end
 
