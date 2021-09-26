@@ -59,8 +59,7 @@ defmodule ScatChat.MixProject do
       {:distillery, "~> 2.0"},
       {:ex_machina, "~> 2.4.0", only: :test},
       {:excoveralls, "~> 0.10", only: :test},
-      {:timber, "~> 3.0"},
-      {:timber_plug, "~> 1.0"}
+      {:timber, "~> 3.0"}
     ]
   end
 
