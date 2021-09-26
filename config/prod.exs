@@ -16,15 +16,8 @@ config :scat_chat, ScatChatWeb.Endpoint,
   secret_key_base: Map.fetch!(System.get_env(), "SECRET_KEY_BASE"),
   server: true
 
-# Logger configuration
-config :logger,
-  level: :info,
-  backends: [Timber.LoggerBackends.HTTP],
-  utc_log: true
-
-# Timber configuration
-config :timber,
-  api_key: Map.fetch!(System.get_env(), "TIMBER_API_KEY")
+# Do not print debug messages in production
+config :logger, level: :info
 
 # ## SSL Support
 #
