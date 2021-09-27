@@ -13,6 +13,9 @@ services:
 addons:
   postgresql: 10
 
+git:
+  depth: false
+
 branches:
   only:
     - master
