@@ -57,7 +57,7 @@ defmodule ScatChat.MixProject do
       # Tooling
       {:credo, "~> 1.5.6", only: [:dev, :test], runtime: false},
       {:distillery, "~> 2.0"},
-      {:ex_machina, "~> 2.4.0", only: :test},
+      {:ex_machina, "~> 2.7.0", only: :test},
       {:excoveralls, "~> 0.10", only: :test}
     ]
   end
