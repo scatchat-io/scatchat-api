@@ -55,7 +55,7 @@ defmodule ScatChat.MixProject do
       {:postgrex, ">= 0.0.0"},
 
       # Tooling
-      {:credo, "~> 1.5.6", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.6.1", only: [:dev, :test], runtime: false},
       {:distillery, "~> 2.0"},
       {:ex_machina, "~> 2.7.0", only: :test},
       {:excoveralls, "~> 0.10", only: :test}
