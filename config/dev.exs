@@ -49,8 +49,8 @@ config :phoenix, :plug_init_mode, :runtime
 
 # Configure your database
 config :scat_chat, ScatChat.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "rzablit",
+  # password: "",
   database: "scat_chat_dev",
   hostname: "localhost",
   pool_size: 10

@@ -11,8 +11,8 @@ config :logger, level: :warn
 
 # Configure your database
 config :scat_chat, ScatChat.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "rzablit",
+  # password: "postgres",
   database: "scat_chat_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
