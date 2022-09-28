@@ -15,7 +15,7 @@ config :scat_chat, ScatChatWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "X838WxAdVuuBLjT6aLktvRKYlLCtTMe5cj0Kov1SnFkBWc83o9tFtOCA1SmTjy0B",
   render_errors: [view: ScatChatWeb.ErrorView, accepts: ~w(json)],
-  pubsub: [name: ScatChat.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub_server: ScatChat.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,
