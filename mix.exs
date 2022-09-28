@@ -47,7 +47,7 @@ defmodule ScatChat.MixProject do
       {:ecto_sql, "~> 3.9.0"},
       {:gettext, "~> 0.20.0"},
       {:jason, "~> 1.4.0"},
-      {:phoenix, "~> 1.5.0"},
+      {:phoenix, "~> 1.6.12"},
       {:phoenix_ecto, "~> 4.4.0"},
       {:phoenix_live_reload, "~> 1.3.3"},
       {:phoenix_pubsub, "~> 2.0"},
