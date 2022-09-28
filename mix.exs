@@ -42,22 +42,22 @@ defmodule ScatChat.MixProject do
   defp deps do
     [
       # Application
-      {:absinthe, "~> 1.4.13"},
-      {:absinthe_plug, "~> 1.4.6"},
-      {:ecto_sql, "~> 3.0"},
-      {:gettext, "~> 0.11"},
-      {:jason, "~> 1.0"},
+      {:absinthe, "~> 1.4.16"},
+      {:absinthe_plug, "~> 1.4.7"},
+      {:ecto_sql, "~> 3.9.0"},
+      {:gettext, "~> 0.20.0"},
+      {:jason, "~> 1.4.0"},
       {:phoenix, "~> 1.4.0"},
-      {:phoenix_ecto, "~> 4.0"},
-      {:phoenix_live_reload, "~> 1.2"},
-      {:phoenix_pubsub, "~> 1.1"},
+      {:phoenix_ecto, "~> 4.4.0"},
+      {:phoenix_live_reload, "~> 1.3.3"},
+      {:phoenix_pubsub, "~> 1.1.2"},
       {:plug_cowboy, "~> 2.5.2"},
-      {:postgrex, ">= 0.0.0"},
+      {:postgrex, "~> 0.16.5"},
 
       # Tooling
-      {:credo, "~> 1.6.2", only: [:dev, :test], runtime: false},
+      {:credo, "~> 1.6.7", only: [:dev, :test], runtime: false},
       {:ex_machina, "~> 2.7.0", only: :test},
-      {:excoveralls, "~> 0.10", only: :test}
+      {:excoveralls, "~> 0.14.6", only: :test}
     ]
   end
 
