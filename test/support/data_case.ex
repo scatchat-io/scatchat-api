@@ -1,4 +1,4 @@
-defmodule ScatChat.DataCase do
+defmodule Scatchat.DataCase do
   @moduledoc """
   This module defines the setup for tests requiring
   access to the application's data layer.
@@ -18,20 +18,20 @@ defmodule ScatChat.DataCase do
 
   using do
     quote do
-      alias ScatChat.Repo
+      alias Scatchat.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import ScatChat.DataCase
+      import Scatchat.DataCase
     end
   end
 
   setup tags do
-    :ok = SQL.Sandbox.checkout(ScatChat.Repo)
+    :ok = SQL.Sandbox.checkout(Scatchat.Repo)
 
     unless tags[:async] do
-      SQL.Sandbox.mode(ScatChat.Repo, {:shared, self()})
+      SQL.Sandbox.mode(Scatchat.Repo, {:shared, self()})
     end
 
     :ok

@@ -1,9 +1,9 @@
-defmodule ScatChat.MixProject do
+defmodule Scatchat.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :scat_chat,
+      app: :scatchat,
       version: "0.1.0",
       elixir: "1.12.3",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -27,7 +27,7 @@ defmodule ScatChat.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {ScatChat.Application, []},
+      mod: {Scatchat.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end

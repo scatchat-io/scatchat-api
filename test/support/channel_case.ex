@@ -1,4 +1,4 @@
-defmodule ScatChatWeb.ChannelCase do
+defmodule ScatchatWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -23,15 +23,15 @@ defmodule ScatChatWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint ScatChatWeb.Endpoint
+      @endpoint ScatchatWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = SQL.Sandbox.checkout(ScatChat.Repo)
+    :ok = SQL.Sandbox.checkout(Scatchat.Repo)
 
     unless tags[:async] do
-      SQL.Sandbox.mode(ScatChat.Repo, {:shared, self()})
+      SQL.Sandbox.mode(Scatchat.Repo, {:shared, self()})
     end
 
     :ok

@@ -5,12 +5,12 @@
 # Inside the script, you can read and write to any of your
 # repositories directly:
 #
-#     ScatChat.Repo.insert!(%ScatChat.SomeSchema{})
+#     Scatchat.Repo.insert!(%Scatchat.SomeSchema{})
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
-alias ScatChat.Repo
+alias Scatchat.Repo
 
-alias ScatChat.Accounts.User
+alias Scatchat.Accounts.User
 
 Repo.insert!(%User{email: "phoenix@example.com"})

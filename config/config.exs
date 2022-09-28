@@ -7,15 +7,15 @@
 # General application configuration
 use Mix.Config
 
-config :scat_chat,
-  ecto_repos: [ScatChat.Repo]
+config :scatchat,
+  ecto_repos: [Scatchat.Repo]
 
 # Configures the endpoint
-config :scat_chat, ScatChatWeb.Endpoint,
+config :scatchat, ScatchatWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "X838WxAdVuuBLjT6aLktvRKYlLCtTMe5cj0Kov1SnFkBWc83o9tFtOCA1SmTjy0B",
-  render_errors: [view: ScatChatWeb.ErrorView, accepts: ~w(json)],
-  pubsub_server: ScatChat.PubSub
+  render_errors: [view: ScatchatWeb.ErrorView, accepts: ~w(json)],
+  pubsub_server: Scatchat.PubSub
 
 # Configures Elixir's Logger
 config :logger, :console,

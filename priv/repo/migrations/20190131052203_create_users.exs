@@ -1,4 +1,4 @@
-defmodule ScatChat.Repo.Migrations.CreateUsers do
+defmodule Scatchat.Repo.Migrations.CreateUsers do
   use Ecto.Migration
 
   def change do

@@ -45,8 +45,8 @@ end
 # when running `mix release`, the first release in the file
 # will be used by default
 
-release :scat_chat do
-  set version: current_version(:scat_chat)
+release :scatchat do
+  set version: current_version(:scatchat)
   set applications: [
     :runtime_tools
   ]
