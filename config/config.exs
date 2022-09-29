@@ -5,7 +5,7 @@
 # is restricted to this project.
 
 # General application configuration
-use Mix.Config
+import Config
 
 config :scatchat,
   ecto_repos: [Scatchat.Repo]
@@ -13,7 +13,6 @@ config :scatchat,
 # Configures the endpoint
 config :scatchat, ScatchatWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "X838WxAdVuuBLjT6aLktvRKYlLCtTMe5cj0Kov1SnFkBWc83o9tFtOCA1SmTjy0B",
   render_errors: [view: ScatchatWeb.ErrorView, accepts: ~w(json)],
   pubsub_server: Scatchat.PubSub
 
@@ -27,4 +26,4 @@ config :phoenix, :json_library, Jason
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
-import_config "#{Mix.env()}.exs"
+import_config "#{config_env()}.exs"
