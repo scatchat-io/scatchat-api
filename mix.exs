@@ -49,7 +49,7 @@ defmodule Scatchat.MixProject do
       {:jason, "~> 1.4.0"},
       {:phoenix, "~> 1.6.12"},
       {:phoenix_ecto, "~> 4.4.0"},
-      {:phoenix_live_reload, "~> 1.3.3"},
+      {:phoenix_live_reload, "~> 1.4.0"},
       {:phoenix_pubsub, "~> 2.0"},
       {:plug_cowboy, "~> 2.5.2"},
       {:postgrex, "~> 0.16.5"},
