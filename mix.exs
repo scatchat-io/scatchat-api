@@ -51,7 +51,7 @@ defmodule Scatchat.MixProject do
       {:phoenix_ecto, "~> 4.4.0"},
       {:phoenix_live_reload, "~> 1.4.0"},
       {:phoenix_pubsub, "~> 2.0"},
-      {:plug_cowboy, "~> 2.5.2"},
+      {:plug_cowboy, "~> 2.6.0"},
       {:postgrex, "~> 0.16.5"},
 
       # Tooling
