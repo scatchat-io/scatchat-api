@@ -45,7 +45,7 @@ defmodule Scatchat.MixProject do
       {:absinthe, "~> 1.7.0"},
       {:absinthe_plug, "~> 1.5.8"},
       {:ecto_sql, "~> 3.9.0"},
-      {:gettext, "~> 0.20.0"},
+      {:gettext, "~> 0.21.0"},
       {:jason, "~> 1.4.0"},
       {:phoenix, "~> 1.6.12"},
       {:phoenix_ecto, "~> 4.4.0"},
