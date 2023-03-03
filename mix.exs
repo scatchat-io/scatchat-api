@@ -57,7 +57,7 @@ defmodule Scatchat.MixProject do
       # Tooling
       {:credo, "~> 1.6.7", only: [:dev, :test], runtime: false},
       {:ex_machina, "~> 2.7.0", only: :test},
-      {:excoveralls, "~> 0.14.6", only: :test}
+      {:excoveralls, "~> 0.16.0", only: :test}
     ]
   end
 
